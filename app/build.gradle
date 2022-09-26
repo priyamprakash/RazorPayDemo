@@ -2,7 +2,12 @@ plugins {
     id 'com.android.application'
 }
 repositories {
+    google()
     mavenCentral()
+    jcenter()
+    flatDir {
+        dirs 'libs'
+    }
 }
 android {
     namespace 'com.priyam.razorpayment'
