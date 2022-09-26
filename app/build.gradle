@@ -2,7 +2,12 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
-
+repositories {
+    mavenCentral()
+    flatDir{
+        dirs 'libs'
+    }
+}
 android {
     namespace 'com.priyam.razorpayintegration'
     compileSdk 32
